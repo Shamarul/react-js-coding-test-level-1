@@ -24,14 +24,14 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <div hidden={!isReady} onClick={()=>{alert('ok')}}>
+        <NavLink to="/pokedex" hidden={!isReady} >
           <img
             src="https://www.freeiconspng.com/uploads/file-pokeball-png-0.png"
             className="App-logo"
             alt="logo"
             style={{ padding: "10px" }}
           />
-        </div>
+        </NavLink>
         <b>
           Requirement: Try to show the hidden image and make it clickable that
           goes to /pokedex when the input below is "Ready!" remember to hide the
